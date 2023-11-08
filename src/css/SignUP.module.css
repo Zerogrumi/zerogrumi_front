@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "font";
+  src: url("../font/Hey\ October.ttf") format("truetype");
+  font-family: "Kfont";
+  src: url("../font/SB\ Aggro\ M.ttf") format("truetype");
+}
+* {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.content {
+  display: flex;
+  background-color: #158d6c;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 812px;
+}
+.nav {
+  display: flex;
+  background-color: #ef9f38;
+  margin-top: 20px;
+  width: 100%;
+  height: 20px;
+}
+.title {
+  margin-top: 15px;
+  font-family: "font";
+  font-size: 70px;
+  margin-top: 20px;
+}
+.subhead {
+  font-family: "font";
+  font-size: 25px;
+}
+.signinText {
+  font-family: "font";
+  font-size: 25px;
+  color: #fff;
+}
+.line {
+  display: flex;
+  background-color: #fff;
+  width: 40%;
+  height: 1px;
+  border-radius: 10px;
+}
+.signUp_ID {
+  font-family: "font";
+  color: #fff;
+  width: 70%;
+  height: 60px;
+}
+.signUp_ID p {
+  margin-left: 20px;
+}
+.signUp_ID input {
+  border-radius: 5px;
+  width: 100%;
+  height: 50%;
+}
+.signUp_nickname {
+  font-family: "font";
+  color: #fff;
+  width: 70%;
+  height: 60px;
+}
+.signUp_nickname p {
+  margin-left: 20px;
+}
+.signUp_nickname input {
+  border-radius: 5px;
+  width: 100%;
+  height: 50%;
+}
+.signUp_pw {
+  font-family: "font";
+  color: #fff;
+  width: 70%;
+  height: 60px;
+}
+.signUp_pw p {
+  margin-left: 20px;
+}
+.signUp_pw input {
+  border-radius: 5px;
+  width: 100%;
+  height: 50%;
+}
+
+.signUp_checkpw {
+  font-family: "font";
+  color: #fff;
+  width: 70%;
+  height: 60px;
+}
+.signUp_checkpw p {
+  margin-left: 20px;
+}
+.signUp_checkpw input {
+  border-radius: 5px;
+  width: 100%;
+  height: 50%;
+}
