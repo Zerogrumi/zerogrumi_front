@@ -5,6 +5,8 @@ import LogIn from "./pages/LogIn";
 import MainPage from "./pages/MainPage";
 import HomePage from "./pages/HomePage";
 import ContentListPage from "./pages/ContentListPage";
+import VerifyPage from "./pages/VerifyPage";
+import CommunityPage from "./pages/CommunityPage";
 export default function Router() {
   return (
     <>
@@ -15,6 +17,8 @@ export default function Router() {
           <Route path="/mainpage" element={<MainPage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/list" element={<ContentListPage />} />
+          <Route path="/veri" element={<VerifyPage />} />
+          <Route path="/comu" element={<CommunityPage />} />
         </Routes>
       </BrowserRouter>
     </>

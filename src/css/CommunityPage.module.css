@@ -1,0 +1,116 @@
+@font-face {
+  font-family: "font";
+  src: url("../font/Hey\ October.ttf") format("truetype");
+}
+* {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  display: flex;
+  justify-content: center;
+}
+body {
+  width: 375px;
+  height: 812px;
+}
+button {
+  cursor: pointer;
+}
+.content {
+  display: flex;
+  background-color: #96c6ba;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 812px;
+}
+.nav {
+  display: flex;
+  background-color: #158d6c;
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 20px;
+  margin-top: 7px;
+  color: white;
+}
+
+.box {
+  width: 95%;
+  height: 250px;
+  background-color: #ef9f38;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.user {
+  display: flex;
+  padding: 10px;
+  margin-right: 170px;
+}
+
+.userName {
+  margin-left: 12px;
+  margin-top: 5px;
+}
+.userImg {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  background: url(../img/charactor1.png) no-repeat;
+  background-size: 100% 100%;
+  border-radius: 2000px;
+}
+
+.userContentbox {
+  display: flex;
+  width: 90%;
+  height: 60%;
+  background-color: wheat;
+  flex-direction: column;
+}
+
+.subtitle {
+  font-size: 20px;
+  padding-left: 7%;
+  margin-top: 10px;
+}
+.subcontent {
+  width: 95%;
+  padding-left: 5%;
+}
+
+.commentbox {
+  margin-top: 200px;
+  display: flex;
+  width: 95%;
+  height: 40px;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+}
+.inputComment {
+  width: 90%;
+  height: 80%;
+  margin-top: 3px;
+  margin-left: 3px;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 10px;
+}
+.commentBtn {
+  font-family: "font";
+  font-size: 20px;
+  margin-left: 3px;
+  width: 50px;
+  border-radius: 15px;
+  background-color: #158d6c;
+}
