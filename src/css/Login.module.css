@@ -49,16 +49,30 @@
 .signIn_ID {
   font-family: "font";
   color: #fff;
+  width: 70%;
+  height: 60px;
+}
+.signIn_ID p {
+  margin-left: 20px;
 }
 .signIn_ID input {
   border-radius: 5px;
+  width: 100%;
+  height: 50%;
 }
 .signIn_PW {
   font-family: "font";
   color: #fff;
+  width: 70%;
+  height: 60px;
+}
+.signIn_PW p {
+  margin-left: 20px;
 }
 .signIn_PW input {
   border-radius: 5px;
+  width: 100%;
+  height: 50%;
 }
 .signIn_btn {
   display: flex;

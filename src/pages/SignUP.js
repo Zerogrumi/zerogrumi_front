@@ -1,5 +1,6 @@
 import React from "react";
-import styles from "../css/Login.module.css";
+import styles from "../css/SignUP.module.css";
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 const SignUP = () => {
@@ -27,7 +28,7 @@ const SignUP = () => {
         </div>
         <div className={styles.signUp_checkpw}>
           <p>Check Password</p>
-          <input type="text" name="signUp_checkpw" placeholder="" />
+          <input type="text" name="signUp_checkPW" placeholder="" />
         </div>
       </div>
     </>
