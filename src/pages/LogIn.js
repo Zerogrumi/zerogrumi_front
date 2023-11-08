@@ -13,18 +13,24 @@ const LogIn = () => {
           <p>sign in</p>
         </div>
         <div className={styles.line}></div>
-        <div className={styles.signIn_ID}>ID</div>
-        <div className={styles.signIn_PW}></div>
+        <div className={styles.signIn_ID}>
+          <p>ID</p>
+          <input type="text" name="signIn_Id" placeholder="" />
+        </div>
+        <div className={styles.signIn_PW}>
+          <p>Password</p>
+          <input type="text" name="signIn_PW" placeholder="" />
+        </div>
         <div className={styles.signIn_btn}>
           <Link to="/login">
-            <p>SIGN UP</p>
+            <p>sign in</p>
           </Link>
         </div>
         <div className={styles.line}></div>
-        <div className={styles.conment}></div>
+        <div className={styles.conment}>계정이 없으신가요? </div>
         <div className={styles.signUp_btn}>
           <Link to="/login">
-            <p>SIGN UP</p>
+            <p>sign up</p>
           </Link>
         </div>
       </div>
