@@ -1,14 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-const Content = () => {
+
+const Content = ({ title, content }) => {
   return (
     <Container>
       <ContentBox>
-        <Title>길거리 음식도 제로웨이스트 하자</Title>
-        <ContentText>
-          우리가 길거리에서 사먹는 음식들 있잔아 맛있겠다 갑자기 치킨먹고싶네
-          얘들아 지구를 위해서 용기들고가라
-        </ContentText>
+        <Title>{title}</Title>
+        <ContentText>{content}</ContentText>
       </ContentBox>
     </Container>
   );
@@ -16,7 +14,7 @@ const Content = () => {
 
 const Container = styled.div`
   width: 169px;
-  height: 176px;
+  height: 185px;
   flex-shrink: 0;
   border-radius: 10px;
   background: #158d6c;
