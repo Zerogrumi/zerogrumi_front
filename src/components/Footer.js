@@ -1,11 +1,12 @@
 import React from "react";
 import styles from "../css/Footer.module.css";
+import commu_tip from "../img/user.svg";
 
 const footer = () => {
   return (
     <div className={styles.content}>
       <div className={styles.commu_tip}>
-        <img src="../img/user.svg" />
+        <commu_tip />
       </div>
       <div className={styles.commu_add}></div>
       <div className={styles.home}></div>

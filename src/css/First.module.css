@@ -32,9 +32,9 @@ body {
 }
 .zeroImg {
   display: flex;
-  width: 174px;
+  width: 200px;
   height: 117px;
-  background: url(../img/zeroImg.png) no-repeat;
+  background: url(../img/earthImg.png) no-repeat;
   margin-top: 50px;
 }
 .title {
