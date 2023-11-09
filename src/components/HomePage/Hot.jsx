@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import ContentBlock from "./ContentBlock.jsx";
+import { contentData } from "../../data/writtenPostData.jsx";
 
 const Hot = () => {
+  const [contentList, setContentList] = useState(contentData);
+
   return (
     <>
       <Container>
         <Title>Hot 게시판</Title>
         <ContentArea>
-          <ContentBlock>길거리 음식도 제로웨이스트 하자</ContentBlock>
-          <ContentBlock>수세미를 설거지 할 때 쓸 수 있다고?</ContentBlock>
-          <ContentBlock>우리 동네 리필샵 공유</ContentBlock>
-          <ContentBlock>우리동네 헌옷수거함은 어디?</ContentBlock>
-          <ContentBlock>아름다운가게 있는거 알고있었어?</ContentBlock>
+          {contentList.map((content) => (
+            <ContentBlock key={content.id} content={content} />
+          ))}
         </ContentArea>
       </Container>
     </>
@@ -30,6 +32,19 @@ const Container = styled.div`
 `;
 
 const Title = styled.div`
+  display: flex;
+  width: 104px;
+  height: 33px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: kfont;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
   width: 322px;
   height: 35px;
   margin: auto;
@@ -46,18 +61,14 @@ const ContentArea = styled.div`
   background-color: #158d6c;
 `;
 
-const ContentBlock = styled.div`
-  width: 322px;
-  height: 35px;
-  background-color: #158d6c;
-  border-radius: 5px;
-  padding: 3px;
-  margin: 1px;
-
-  &:hover {
-    color: #ffffff;
-    border: 3px solid #ef9f38;
-    // transition: 0.3s;
+const FontStyles = styled.div`
+  @font-face {
+    font-family: "font";
+    src: url("../font/Hey\ October.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Kfont";
+    src: url("../font/SB\ Aggro\ M.ttf") format("truetype");
   }
 `;
 

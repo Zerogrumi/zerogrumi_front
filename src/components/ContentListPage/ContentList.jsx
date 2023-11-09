@@ -7,8 +7,6 @@ import { contentData } from "../../data/writtenPostData";
 
 const CategoryList = () => {
   const location = useLocation();
-  console.log(location.state);
-
   const category = location.state?.category || "defaultCategory";
 
   const filteredData = contentData
@@ -50,6 +48,17 @@ const getBoardName = (category) => {
   }
 };
 
+const FontStyles = styled.div`
+  @font-face {
+    font-family: "font";
+    src: url("../font/Hey\ October.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Kfont";
+    src: url("../font/SB\ Aggro\ M.ttf") format("truetype");
+  }
+`;
+
 const BoardName = styled.div`
   position: absolute;
   top: 22px;
@@ -61,10 +70,9 @@ const BoardName = styled.div`
   justify-content: center;
   flex-shrink: 0;
   color: #000;
-  font-family: Inter;
-  font-size: 20px;
+  font-family: kfont;
+  font-size: 22px;
   font-style: normal;
-  font-weight: 900;
   line-height: normal;
 `;
 
