@@ -1,17 +1,23 @@
 import React from "react";
 import styled from "styled-components";
+import { useLocation } from "react-router-dom";
 
 import Content from "./Content";
 import { contentData } from "../../data/writtenPostData";
 
-const CategoryList = ({ category }) => {
+const CategoryList = () => {
+  const location = useLocation();
+  console.log(location.state);
+
+  const category = location.state?.category || "defaultCategory";
+
   const filteredData = contentData
     .filter((data) => data.category === category)
     .reverse();
 
   return (
     <div>
-      <BoardName>{category}이름</BoardName>
+      <BoardName>{getBoardName(category)}</BoardName>
       <Container>
         <ContentContainer>
           {filteredData.map((data) => (
@@ -31,6 +37,17 @@ const CategoryList = ({ category }) => {
       </Container>
     </div>
   );
+};
+
+const getBoardName = (category) => {
+  switch (category) {
+    case "tipShare":
+      return "꿀팁 공유 게시판";
+    case "spaceShare":
+      return "가게 공유 게시판";
+    default:
+      return "";
+  }
 };
 
 const BoardName = styled.div`
