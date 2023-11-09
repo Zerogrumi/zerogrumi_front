@@ -1,0 +1,59 @@
+@font-face {
+  font-family: "font";
+  src: url("../font/Hey\ October.ttf") format("truetype");
+  font-family: "Kfont";
+  src: url("../font/SB\ Aggro\ M.ttf") format("truetype");
+}
+* {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.content {
+  display: flex;
+  background-color: #158d6c;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 812px;
+}
+.nav {
+  display: flex;
+  background-color: #ef9f38;
+  margin-top: 20px;
+  width: 100%;
+  height: 20px;
+}
+.title {
+  margin-top: 15px;
+  font-family: "font";
+  font-size: 70px;
+  margin-top: 20px;
+}
+.subhead {
+  font-family: "font";
+  font-size: 25px;
+}
+.signinText {
+  font-family: "font";
+  font-size: 25px;
+  color: #fff;
+}
+.point {
+  width: 90%;
+  display: flex;
+
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.point img {
+  width: 30px;
+  filter: invert(100%) sepia(3%) saturate(7433%) hue-rotate(7deg)
+    brightness(117%) contrast(88%);
+}
+.point .pointNum {
+  margin-left: 5px;
+  margin-bottom: 3px;
+  color: #fff;
+}

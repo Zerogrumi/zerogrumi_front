@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../css/Login.module.css";
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 const LogIn = () => {
@@ -33,6 +34,7 @@ const LogIn = () => {
             <p>sign up</p>
           </Link>
         </div>
+        <Footer />
       </div>
     </>
   );

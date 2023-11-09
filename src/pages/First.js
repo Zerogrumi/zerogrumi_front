@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../css/First.module.css";
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 const First = (props) => {
@@ -25,7 +26,9 @@ const First = (props) => {
             <p>HOME</p>
           </Link>
         </div>
-        <div className={styles.footer}></div>
+        <div className={styles.footer}>
+          <Footer />
+        </div>
       </div>
     </>
   );
