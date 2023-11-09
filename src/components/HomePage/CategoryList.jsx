@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Content from "./Content";
+<<<<<<< yunkyeong
 import { contentData } from "../../data/writtenPostData";
 
 const CategoryList = ({ category }) => {
