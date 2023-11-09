@@ -53,6 +53,7 @@
     brightness(117%) contrast(88%);
 }
 .point .pointNum {
+  font-family: "kfont";
   margin-left: 5px;
   margin-bottom: 3px;
   color: #fff;
