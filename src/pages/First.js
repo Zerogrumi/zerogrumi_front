@@ -8,9 +8,16 @@ const First = (props) => {
     <>
       <div className={styles.content}>
         <div className={styles.nav}></div>
-        <div className={styles.zeroImg}></div>
-        <div className={styles.title}>ZERO WASTE</div>
-        <div className={styles.subhead}>Start with me, Start with you</div>
+        <Link to="/">
+          <div className={styles.zeroImg}></div>
+        </Link>
+        <Link to="/">
+          <div className={styles.title}>ZERO WASTE</div>
+        </Link>
+        <Link to="/">
+          <div className={styles.subhead}>Start with me, Start with you</div>
+        </Link>
+
         <div className={styles.First_btn}>
           <Link to="/login">
             <p>SIGN IN</p>
