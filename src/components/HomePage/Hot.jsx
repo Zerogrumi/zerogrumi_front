@@ -29,6 +29,12 @@ const Container = styled.div`
   border-radius: 10px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin: auto;
+
+  //가로스크롤이없애고싶다진짜로
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 const Title = styled.div`

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Content from "./Content";
 import { contentData } from "../../data/writtenPostData";
@@ -19,17 +20,19 @@ const CategoryList = () => {
       <Container>
         <ContentContainer>
           {filteredData.map((data) => (
-            <ContentStyle key={data.id}>
-              <Content
-                title={data.title}
-                name={data.name}
-                userImg={data.userImg}
-                zeroGrade={data.zeroGrade}
-                heart={data.heart}
-                commentCount={data.commentCount}
-                scrap={data.scrap}
-              />
-            </ContentStyle>
+            <Link to={`/comu`}>
+              <ContentStyle key={data.id}>
+                <Content
+                  title={data.title}
+                  name={data.name}
+                  userImg={data.userImg}
+                  zeroGrade={data.zeroGrade}
+                  heart={data.heart}
+                  commentCount={data.commentCount}
+                  scrap={data.scrap}
+                />
+              </ContentStyle>
+            </Link>
           ))}
         </ContentContainer>
       </Container>

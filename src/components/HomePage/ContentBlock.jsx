@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 const ContentBlock = ({ content }) => {
   const { title, heart } = content;
 
@@ -10,7 +10,9 @@ const ContentBlock = ({ content }) => {
     return (
       <div>
         <FontStyles>
-          <Title>{truncatedTitle}</Title>
+          <Link to={`/comu`}>
+            <Title>{truncatedTitle}</Title>
+          </Link>
         </FontStyles>
       </div>
     );

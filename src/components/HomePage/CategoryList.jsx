@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import { Link } from "react-router-dom";
 import Content from "./Content";
 
 import { contentData } from "../../data/writtenPostData";
@@ -15,7 +15,13 @@ const CategoryList = ({ category }) => {
       <Container>
         <ContentContainer>
           {filteredData.map((data) => (
-            <Content key={data.id} title={data.title} content={data.content} />
+            <Link to={`/comu`}>
+              <Content
+                key={data.id}
+                title={data.title}
+                content={data.content}
+              />
+            </Link>
           ))}
         </ContentContainer>
       </Container>
