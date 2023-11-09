@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage";
 import ContentListPage from "./pages/ContentListPage";
 import VerifyPage from "./pages/VerifyPage";
 import CommunityPage from "./pages/CommunityPage";
+
 export default function Router() {
   return (
     <>

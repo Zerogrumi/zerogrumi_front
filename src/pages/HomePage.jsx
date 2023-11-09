@@ -3,6 +3,7 @@ import styled from "styled-components";
 import ReactDOM from "react-dom";
 import Hot from "../components/HomePage/Hot";
 import CategoryList from "../components/HomePage/CategoryList";
+import { Link } from "react-router-dom";
 
 export default function HomePage() {
   return (
@@ -11,9 +12,13 @@ export default function HomePage() {
         <TopLine></TopLine>
         <StyleContainer>
           <Hot></Hot>
-          <CategoryName>꿀팁 공유 커뮤니티</CategoryName>
+          <Link to={`/list`} state={{ category: "tipShare" }}>
+            <CategoryName>꿀팁 공유 커뮤니티</CategoryName>
+          </Link>
           <CategoryList category="tipShare" />
-          <CategoryName>가게 공유 커뮤니티</CategoryName>
+          <Link to={`/list`} state={{ category: "spaceShare" }}>
+            <CategoryName>가게 공유 커뮤니티</CategoryName>
+          </Link>
           <CategoryList category="spaceShare" />
         </StyleContainer>
       </PageContainer>
