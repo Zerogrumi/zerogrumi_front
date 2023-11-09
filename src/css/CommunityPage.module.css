@@ -1,6 +1,8 @@
 @font-face {
   font-family: "font";
   src: url("../font/Hey\ October.ttf") format("truetype");
+  font-family: "Kfont";
+  src: url("../font/SB\ Aggro\ M.ttf") format("truetype");
 }
 * {
   border: 0px;
@@ -37,12 +39,14 @@ button {
 }
 
 .title {
+  font-family: "Kfont";
   font-size: 20px;
   margin-top: 7px;
   color: white;
 }
 
 .box {
+  font-family: "Kfont";
   width: 95%;
   height: 250px;
   background-color: #ef9f38;
@@ -55,7 +59,6 @@ button {
 .user {
   display: flex;
   padding: 10px;
-  margin-right: 170px;
 }
 
 .userName {
@@ -73,15 +76,16 @@ button {
 
 .userContentbox {
   display: flex;
-  width: 90%;
+  width: 92%;
   height: 60%;
   background-color: wheat;
   flex-direction: column;
+  border-radius: 10px;
 }
 
 .subtitle {
   font-size: 20px;
-  padding-left: 7%;
+  text-align: center;
   margin-top: 10px;
 }
 .subcontent {
@@ -90,14 +94,16 @@ button {
 }
 
 .commentbox {
-  margin-top: 200px;
+  position: fixed;
+  margin-top: 720px;
   display: flex;
-  width: 95%;
-  height: 40px;
+  width: 360px;
+  height: 35px;
   background-color: #d9d9d9;
   border-radius: 10px;
 }
 .inputComment {
+  font-family: "Kfont";
   width: 90%;
   height: 80%;
   margin-top: 3px;
@@ -107,10 +113,53 @@ button {
   padding: 10px;
 }
 .commentBtn {
-  font-family: "font";
-  font-size: 20px;
+  font-family: "Kfont";
+  font-size: 13px;
   margin-left: 3px;
   width: 50px;
   border-radius: 15px;
   background-color: #158d6c;
+}
+.recommendBar {
+  display: flex;
+  padding: 10px;
+  width: 90%;
+}
+.recommendBtn {
+  font-family: "Kfont";
+  font-size: 15px;
+  background-color: #158d6c;
+  color: white;
+  border-radius: 10px;
+  width: 60px;
+  height: 30px;
+  padding: 5px;
+  margin-left: 70px;
+  margin-top: -3px;
+}
+.recommend {
+  width: 70%;
+}
+.saveBtn {
+  font-family: "Kfont";
+  font-size: 15px;
+  background-color: #158d6c;
+  color: white;
+  border-radius: 10px;
+  width: 60px;
+  height: 30px;
+  margin-left: 10px;
+  margin-top: -3px;
+}
+
+.comment {
+  font-family: "Kfont";
+  font-size: 15px;
+  margin-top: 10px;
+  width: 90%;
+  height: 40px;
+  padding: 10px;
+  display: flex;
+  background-color: #d9d9d9;
+  border-radius: 15px;
 }

@@ -12,7 +12,7 @@ const Verify = () => {
         </div>
         <img className={styles.zeroImg}></img>
         <div className={styles.putImgbox}></div>
-        <button className={styles.imguploadBtn}>Image Upload</button>
+        <button className={styles.imguploadBtn}>파일 업로드</button>
         <div className={styles.textbox}>
           <div className={styles.userTitle}>
             <label>제목</label>
@@ -21,9 +21,9 @@ const Verify = () => {
           <div className={styles.userContent}>
             <label
               style={{
-                lineHeight: "20px",
+                height: "20px",
                 verticalAlign: "top",
-                marginTop: "-50px",
+                marginTop: "300px",
               }}
             >
               내용
