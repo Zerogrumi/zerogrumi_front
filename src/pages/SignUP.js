@@ -30,6 +30,7 @@ const SignUP = () => {
           <p>Check Password</p>
           <input type="text" name="signUp_checkPW" placeholder="" />
         </div>
+        <Footer />
       </div>
     </>
   );
