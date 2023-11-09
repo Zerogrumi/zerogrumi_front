@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "../css/VerifyPage.module.css";
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 const Verify = () => {
@@ -77,6 +78,7 @@ const Verify = () => {
           </div>
         </div>
         <button className={styles.uploadBtn}>Upload</button>
+        <Footer />
       </div>
     </>
   );
