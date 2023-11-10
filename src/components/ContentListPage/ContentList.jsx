@@ -22,7 +22,7 @@ const CategoryList = () => {
       <Container>
         <ContentContainer>
           {filteredData.map((data) => (
-            <Link to={`/comu`}>
+            <Link to={`/comu/${data.id}`} key={data.id} state={{ data }}>
               <ContentStyle key={data.id}>
                 <Content
                   title={data.title}

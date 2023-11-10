@@ -7,7 +7,7 @@ const Card = ({ showRecommendBar = true, commentCount }) => {
   const [saveCount, setSaveCount] = useState(0);
   const [postData, setPostData] = useState({});
   const { id } = useParams();
-  const location = useLocation(); // useLocation을 여기서 가져옴
+  const location = useLocation();
 
   useEffect(() => {
     if (location.state) {
@@ -17,16 +17,30 @@ const Card = ({ showRecommendBar = true, commentCount }) => {
 
       if (post) {
         setPostData(post);
+        setLikeCount(post.heart || 0);
+        setSaveCount(post.scrap || 0);
       }
     }
   }, [id, location.state]);
 
   const handleLikeClick = () => {
     setLikeCount((prevCount) => prevCount + 1);
+    const storedDataString = sessionStorage.getItem("writeData");
+    const storedData = storedDataString ? JSON.parse(storedDataString) : [];
+    const updatedData = storedData.map((data) =>
+      data.id === parseInt(id) ? { ...data, heart: likeCount + 1 } : data
+    );
+    sessionStorage.setItem("writeData", JSON.stringify(updatedData));
   };
 
   const handleSaveClick = () => {
     setSaveCount((prevCount) => prevCount + 1);
+    const storedDataString = sessionStorage.getItem("writeData");
+    const storedData = storedDataString ? JSON.parse(storedDataString) : [];
+    const updatedData = storedData.map((data) =>
+      data.id === parseInt(id) ? { ...data, scrap: saveCount + 1 } : data
+    );
+    sessionStorage.setItem("writeData", JSON.stringify(updatedData));
   };
 
   return (

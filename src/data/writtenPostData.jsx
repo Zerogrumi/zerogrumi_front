@@ -37,7 +37,7 @@ export const contentData = [
     content:
       "세탁할때 양모볼을 넣고 같이 돌리면 섬유유연제 없이도 부드럽게 빨래할 수 있대 알고있었어?",
     category: "tipShare",
-    heart: 8,
+    heart: 10,
     commentCount: 2,
     scrap: 124,
   },
@@ -78,7 +78,7 @@ export const contentData = [
     userImg: "../",
     content: "없애버리고 싶은데 안 없어져서 날 속상하게 해",
     category: "spaceShare",
-    heart: 4,
+    heart: 200,
     commentCount: 2,
     scrap: 124,
   },
