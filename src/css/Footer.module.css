@@ -7,6 +7,14 @@
   width: 100%;
   height: 50px;
 }
+@media (max-width: 812px) {
+  .content {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+  }
+}
 .commu_tip img {
   display: flex;
   fill: #fff;
