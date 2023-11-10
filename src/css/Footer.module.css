@@ -4,11 +4,56 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  width: 100%;
-  height: 100px;
+  width: 375px;
+  height: 50px;
+  position: fixed;
+  margin-top: 762px;
 }
-
-.commu_tip {
+@media (max-width: 812px) {
+  .content {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+  }
+}
+.commu_tip img {
+  display: flex;
+  fill: #fff;
+  width: 30px;
+  height: 30px;
+  filter: invert(100%) sepia(3%) saturate(7433%) hue-rotate(7deg)
+    brightness(117%) contrast(88%);
+}
+.commu_add img {
   display: flex;
   color: #fff;
+  width: 30px;
+  height: 30px;
+  filter: invert(100%) sepia(3%) saturate(7433%) hue-rotate(7deg)
+    brightness(117%) contrast(88%);
+}
+.home img {
+  display: flex;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  filter: invert(100%) sepia(3%) saturate(7433%) hue-rotate(7deg)
+    brightness(117%) contrast(88%);
+}
+.store img {
+  display: flex;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  filter: invert(100%) sepia(3%) saturate(7433%) hue-rotate(7deg)
+    brightness(117%) contrast(88%);
+}
+.myPage img {
+  display: flex;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  filter: invert(100%) sepia(3%) saturate(7433%) hue-rotate(7deg)
+    brightness(117%) contrast(88%);
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../css/Login.module.css";
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 const LogIn = () => {
@@ -7,8 +8,13 @@ const LogIn = () => {
     <>
       <div className={styles.content}>
         <div className={styles.nav}></div>
-        <div className={styles.title}>ZERO WASTE</div>
-        <div className={styles.subhead}>Start with me, Start with you</div>
+        <Link to="/">
+          <div className={styles.title}>ZERO WASTE</div>
+        </Link>
+        <Link to="/">
+          <div className={styles.subhead}>Start with me, Start with you</div>
+        </Link>
+
         <div className={styles.signinText}>
           <p>sign in</p>
         </div>
@@ -33,6 +39,7 @@ const LogIn = () => {
             <p>sign up</p>
           </Link>
         </div>
+        <Footer />
       </div>
     </>
   );

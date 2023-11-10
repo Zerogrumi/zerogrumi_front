@@ -1,6 +1,10 @@
 @font-face {
   font-family: "font";
   src: url("../font/Hey\ October.ttf") format("truetype");
+  font-family: "Kfont";
+  src: url("../font/SB\ Aggro\ M.ttf") format("truetype");
+  font-family: "Kfont";
+  src: url("../font/SB\ Aggro\ M.ttf") format("truetype");
 }
 * {
   border: 0px;
@@ -48,31 +52,43 @@ button {
   font-size: 20px;
   margin-top: 10px;
   margin-right: 5px;
+  font-weight: 800;
 }
 
 .title2 {
-  font-family: "font";
+  font-family: "Kfont";
+  font-family: "Kfont";
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 8px;
   margin-left: 5px;
 }
 
 .putImgbox {
   margin-top: 20px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 200px;
   width: 320px;
   border-radius: 50px;
   background-color: white;
+  overflow: hidden;
+}
+.putImgbox img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .imguploadBtn {
   margin-top: 15px;
-  font-family: "font";
-  font-size: 15px;
+  font-family: "Kfont";
+  font-size: 12px;
+  font-family: "Kfont";
+  font-size: 12px;
   text-align: center;
-  height: 20px;
-  width: 120px;
+  height: 30px;
+  width: 125px;
   border-radius: 10px;
   background-color: #d9d9d9;
 }
@@ -82,13 +98,16 @@ button {
   display: flex;
   flex-direction: column;
   font-size: 17px;
+  font-family: "Kfont";
 }
 
 .userTitle {
   margin-top: 20px;
+  font-family: "Kfont";
 }
 .userContent {
   margin-top: 20px;
+  font-family: "Kfont";
 }
 .inputTitle {
   margin-left: 10px;
@@ -97,6 +116,7 @@ button {
   border-radius: 10px;
   font-size: 15px;
   padding: 10px;
+  font-family: "Tfont";
 }
 .inputContent {
   margin-left: 10px;
@@ -105,6 +125,7 @@ button {
   border-radius: 10px;
   padding: 10px;
   font-size: 15px;
+  font-family: "Tfont";
 }
 .uploadBtn {
   margin-top: 20px;
@@ -113,6 +134,8 @@ button {
   background-color: #158d6c;
   border-radius: 10px;
   text-align: center;
-  font-family: "font";
-  font-size: 20px;
+  font-family: "Kfont";
+  font-size: 15px;
+  color: white;
+  font-weight: 1000;
 }

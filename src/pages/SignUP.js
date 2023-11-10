@@ -8,8 +8,12 @@ const SignUP = () => {
     <>
       <div className={styles.content}>
         <div className={styles.nav}></div>
-        <div className={styles.title}>ZERO WASTE</div>
-        <div className={styles.subhead}>Start with me, Start with you</div>
+        <Link to="/">
+          <div className={styles.title}>ZERO WASTE</div>
+        </Link>
+        <Link to="/">
+          <div className={styles.subhead}>Start with me, Start with you</div>
+        </Link>
         <div className={styles.signinText}>
           <p>sign up</p>
         </div>
@@ -30,6 +34,7 @@ const SignUP = () => {
           <p>Check Password</p>
           <input type="text" name="signUp_checkPW" placeholder="" />
         </div>
+        <Footer />
       </div>
     </>
   );

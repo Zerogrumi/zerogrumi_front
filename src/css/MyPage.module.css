@@ -1,19 +1,13 @@
 @font-face {
   font-family: "font";
   src: url("../font/Hey\ October.ttf") format("truetype");
+  font-family: "Kfont";
+  src: url("../font/SB\ Aggro\ M.ttf") format("truetype");
 }
 * {
   border: 0px;
   margin: 0px;
   padding: 0px;
-}
-html {
-  display: flex;
-  justify-content: center;
-}
-body {
-  width: 375px;
-  height: 812px;
 }
 .content {
   display: flex;
@@ -30,13 +24,6 @@ body {
   width: 100%;
   height: 20px;
 }
-.zeroImg {
-  display: flex;
-  width: 200px;
-  height: 117px;
-  background: url(../img/earthImg.png) no-repeat;
-  margin-top: 50px;
-}
 .title {
   margin-top: 15px;
   font-family: "font";
@@ -46,27 +33,28 @@ body {
 .subhead {
   font-family: "font";
   font-size: 25px;
-  margin-bottom: 50px;
 }
-.First_btn {
-  display: flex;
-  width: 320px;
-  height: 70px;
+.signinText {
   font-family: "font";
   font-size: 25px;
-  background-color: #96c6ba;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  margin: 20px;
+  color: #fff;
 }
-.First_btn p {
-  margin-top: 10px;
-}
-.footer {
+.point {
+  width: 90%;
   display: flex;
-  background-color: #ef9f38;
-  margin-top: 20px;
-  width: 100%;
-  height: 20px;
+
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.point img {
+  width: 30px;
+  filter: invert(100%) sepia(3%) saturate(7433%) hue-rotate(7deg)
+    brightness(117%) contrast(88%);
+}
+.point .pointNum {
+  font-family: "kfont";
+  margin-left: 5px;
+  margin-bottom: 3px;
+  color: #fff;
 }

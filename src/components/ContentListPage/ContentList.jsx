@@ -1,14 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import Content from "./Content";
 import { contentData } from "../../data/writtenPostData";
 
 const CategoryList = () => {
   const location = useLocation();
-  console.log(location.state);
-
   const category = location.state?.category || "defaultCategory";
 
   const filteredData = contentData
@@ -21,17 +20,19 @@ const CategoryList = () => {
       <Container>
         <ContentContainer>
           {filteredData.map((data) => (
-            <ContentStyle key={data.id}>
-              <Content
-                title={data.title}
-                name={data.name}
-                userImg={data.userImg}
-                zeroGrade={data.zeroGrade}
-                heart={data.heart}
-                commentCount={data.commentCount}
-                scrap={data.scrap}
-              />
-            </ContentStyle>
+            <Link to={`/comu`}>
+              <ContentStyle key={data.id}>
+                <Content
+                  title={data.title}
+                  name={data.name}
+                  userImg={data.userImg}
+                  zeroGrade={data.zeroGrade}
+                  heart={data.heart}
+                  commentCount={data.commentCount}
+                  scrap={data.scrap}
+                />
+              </ContentStyle>
+            </Link>
           ))}
         </ContentContainer>
       </Container>
@@ -50,6 +51,17 @@ const getBoardName = (category) => {
   }
 };
 
+const FontStyles = styled.div`
+  @font-face {
+    font-family: "font";
+    src: url("../font/Hey\ October.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Kfont";
+    src: url("../font/SB\ Aggro\ M.ttf") format("truetype");
+  }
+`;
+
 const BoardName = styled.div`
   position: absolute;
   top: 22px;
@@ -61,10 +73,9 @@ const BoardName = styled.div`
   justify-content: center;
   flex-shrink: 0;
   color: #000;
-  font-family: Inter;
-  font-size: 20px;
+  font-family: kfont;
+  font-size: 22px;
   font-style: normal;
-  font-weight: 900;
   line-height: normal;
 `;
 
