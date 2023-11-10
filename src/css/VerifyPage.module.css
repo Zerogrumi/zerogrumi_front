@@ -3,6 +3,8 @@
   src: url("../font/Hey\ October.ttf") format("truetype");
   font-family: "Kfont";
   src: url("../font/SB\ Aggro\ M.ttf") format("truetype");
+  font-family: "Kfont";
+  src: url("../font/SB\ Aggro\ M.ttf") format("truetype");
 }
 * {
   border: 0px;
@@ -50,12 +52,14 @@ button {
   font-size: 20px;
   margin-top: 10px;
   margin-right: 5px;
+  font-weight: 800;
 }
 
 .title2 {
   font-family: "Kfont";
+  font-family: "Kfont";
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 8px;
   margin-left: 5px;
 }
 
@@ -80,6 +84,8 @@ button {
   margin-top: 15px;
   font-family: "Kfont";
   font-size: 12px;
+  font-family: "Kfont";
+  font-size: 12px;
   text-align: center;
   height: 30px;
   width: 125px;
@@ -92,6 +98,7 @@ button {
   display: flex;
   flex-direction: column;
   font-size: 17px;
+  font-family: "Kfont";
 }
 
 .userTitle {
@@ -109,6 +116,7 @@ button {
   border-radius: 10px;
   font-size: 15px;
   padding: 10px;
+  font-family: "Kfont";
 }
 .inputContent {
   margin-left: 10px;
@@ -117,6 +125,7 @@ button {
   border-radius: 10px;
   padding: 10px;
   font-size: 15px;
+  font-family: "Kfont";
 }
 .uploadBtn {
   margin-top: 20px;
@@ -127,4 +136,6 @@ button {
   text-align: center;
   font-family: "Kfont";
   font-size: 15px;
+  color: white;
+  font-weight: 1000;
 }

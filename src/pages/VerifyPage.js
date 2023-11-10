@@ -67,9 +67,9 @@ const Verify = () => {
           <div className={styles.userContent}>
             <label
               style={{
-                lineHeight: "20px",
+                height: "20px",
                 verticalAlign: "top",
-                marginTop: "-50px",
+                marginTop: "300px",
               }}
             >
               내용
