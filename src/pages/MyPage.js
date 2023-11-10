@@ -24,7 +24,16 @@ const MyPage = (props) => {
           <div className={styles.pointNum}>1234</div>
         </div>
         <Card showRecommendBar={false} />
+        <div className={styles.btnBox}>
+          <Link to="/writ">
+            <button className={styles.writeBtn}>글 작성하기</button>
+          </Link>
+          <Link to="/veri">
+            <button className={styles.verifyBtn}>실천 인증하기</button>
+          </Link>
+        </div>
       </div>
+
       <Footer />
     </>
   );

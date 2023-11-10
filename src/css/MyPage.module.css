@@ -58,3 +58,33 @@
   margin-bottom: 3px;
   color: #fff;
 }
+
+.btnBox {
+  margin-top: 60px;
+  display: flex;
+}
+
+.writeBtn {
+  height: 50px;
+  width: 100px;
+  background-color: #ef9f38;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Kfont";
+  font-size: 15px;
+  color: white;
+  font-weight: 1000;
+}
+
+.verifyBtn {
+  height: 50px;
+  width: 100px;
+  background-color: #ef9f38;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Kfont";
+  font-size: 15px;
+  color: white;
+  font-weight: 1000;
+  margin-left: 50px;
+}
