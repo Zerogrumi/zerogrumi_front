@@ -10,7 +10,9 @@ const CategoryList = () => {
   const location = useLocation();
   const category = location.state?.category || "defaultCategory";
 
-  const filteredData = contentData
+  const storedData = JSON.parse(sessionStorage.getItem("writeData")) || [];
+
+  const filteredData = storedData
     .filter((data) => data.category === category)
     .reverse();
 

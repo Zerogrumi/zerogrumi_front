@@ -6,6 +6,8 @@ import { contentData } from "../data/writtenPostData";
 import Footer from "../components/Footer";
 
 const ContentListPage = () => {
+  const storedData = JSON.parse(localStorage.getItem("writeData")) || [];
+
   return (
     <>
       <PageContainer>
