@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../css/CommunityPage.module.css";
+import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
 const Community = () => {
@@ -44,6 +45,8 @@ const Community = () => {
           <input className={styles.inputComment}></input>
           <button className={styles.commentBtn}>보내기</button>
         </div>
+
+        <Footer />
       </div>
     </>
   );

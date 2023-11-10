@@ -3,6 +3,9 @@
   src: url("../font/Hey\ October.ttf") format("truetype");
   font-family: "Kfont";
   src: url("../font/SB\ Aggro\ M.ttf") format("truetype");
+  font-family: "Tfont";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff")
+    format("woff");
 }
 * {
   border: 0px;
@@ -85,12 +88,14 @@ button {
 
 .subtitle {
   font-size: 20px;
-  text-align: center;
   margin-top: 10px;
+  padding-left: 5%;
 }
 .subcontent {
   width: 95%;
   padding-left: 5%;
+  font-family: "Tfont";
+  font-weight: 800;
 }
 
 .commentbox {
@@ -103,7 +108,7 @@ button {
   border-radius: 10px;
 }
 .inputComment {
-  font-family: "Kfont";
+  font-family: "Tfont";
   width: 90%;
   height: 80%;
   margin-top: 3px;
@@ -153,7 +158,7 @@ button {
 }
 
 .comment {
-  font-family: "Kfont";
+  font-family: "Tfont";
   font-size: 15px;
   margin-top: 10px;
   width: 90%;

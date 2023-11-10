@@ -45,12 +45,14 @@
   width: 40%;
   height: 1px;
   border-radius: 10px;
+  margin: 20px;
 }
 .signIn_ID {
   font-family: "font";
   color: #fff;
   width: 70%;
   height: 60px;
+  margin-top: 20px;
 }
 .signIn_ID p {
   margin-left: 20px;
@@ -65,6 +67,7 @@
   color: #fff;
   width: 70%;
   height: 60px;
+  margin-bottom: 40px;
 }
 .signIn_PW p {
   margin-left: 20px;
@@ -88,7 +91,7 @@
   color: #fff;
 }
 .conment {
-  font-family: "kfont";
+  font-family: "Kfont";
   color: #fff;
 }
 .signUp_btn {
@@ -103,4 +106,5 @@
   border-radius: 20px;
   margin: 20px;
   color: #fff;
+  margin-bottom: 50px;
 }

@@ -4,8 +4,18 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
-  width: 100%;
+  width: 375px;
   height: 50px;
+  position: fixed;
+  margin-top: 762px;
+}
+@media (max-width: 812px) {
+  .content {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+  }
 }
 .commu_tip img {
   display: flex;
