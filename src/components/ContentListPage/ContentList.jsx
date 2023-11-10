@@ -48,6 +48,8 @@ const getBoardName = (category) => {
       return "꿀팁 공유 게시판";
     case "spaceShare":
       return "가게 공유 게시판";
+    case "expShare":
+      return "실천 인증 게시판";
     default:
       return "";
   }
