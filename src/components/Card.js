@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "../css/CommunityPage.module.css";
 
-const Card = ({ showRecommendBar = true }) => {
+const Card = ({ showRecommendBar = true, commentCount }) => {
   const [likeCount, setLikeCount] = useState(0);
   const [saveCount, setSaveCount] = useState(0);
 
@@ -34,7 +34,7 @@ const Card = ({ showRecommendBar = true }) => {
         {showRecommendBar && (
           <div className={styles.recommendBar}>
             <div className={styles.recommend}>
-              공감 {likeCount} 저장 {saveCount} 댓글 2
+              공감 {likeCount} 저장 {saveCount} 댓글 {commentCount}
             </div>
             <button className={styles.recommendBtn} onClick={handleLikeClick}>
               공감
