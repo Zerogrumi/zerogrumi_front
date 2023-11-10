@@ -24,7 +24,7 @@ export default function Router() {
           <Route path="/home" element={<HomePage />} />
           <Route path="/list" element={<ContentListPage />} />
           <Route path="/veri" element={<VerifyPage />} />
-          <Route path="/comu" element={<CommunityPage />} />
+          <Route path="/comu/:id" element={<CommunityPage />} />
           <Route path="/writ" element={<WritePage />} />
         </Routes>
       </BrowserRouter>
