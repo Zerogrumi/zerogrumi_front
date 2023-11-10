@@ -25,7 +25,6 @@ export default function HomePage() {
             <CategoryName>실천 공유 커뮤니티</CategoryName>
             <CategoryList category="expShare" />
           </Link>
-          <CategoryList category="veri" />
         </StyleContainer>
       </PageContainer>
       <Footer />
