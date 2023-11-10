@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import uImg from "../../img/charactor1.png";
+
 const Content = ({
   title,
   name,
@@ -27,7 +29,7 @@ const Content = ({
     <Container>
       <ContentBox>
         <UserInfoDIv>
-          <UserImg src={userImg} />
+          <UserImg src={uImg} />
         </UserInfoDIv>
         <UserInfoDIv>
           <UserInfoStyleDiv>
@@ -45,6 +47,17 @@ const Content = ({
     </Container>
   );
 };
+
+const FontStyles = styled.div`
+  @font-face {
+    font-family: "font";
+    src: url("../font/Hey\ October.ttf") format("truetype");
+  }
+  @font-face {
+    font-family: "Kfont";
+    src: url("../font/SB\ Aggro\ M.ttf") format("truetype");
+  }
+`;
 
 const Container = styled.div`
   width: 330px;
@@ -64,10 +77,9 @@ const Title = styled.div`
   flex-direction: column;
   justify-content: center;
   color: #000000;
-  font-family: Inter;
+  font-family: kfont;
   font-size: 20px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
   background: #158d6c;
   margin-bottom: 10px;
@@ -79,7 +91,7 @@ const UserInfoDIv = styled.div`
   display: inline-block;
 `;
 
-const UserImg = styled.div`
+const UserImg = styled.img`
   margin: 12px;
   width: 50px;
   height: 50px;
@@ -98,17 +110,16 @@ const UserName = styled.div`
   justify-content: center;
   flex-shrink: 0;
   color: #000;
-  font-family: Inter;
+  font-family: kfont;
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
 `;
 
 const UserGrade = styled.div`
   flex-shrink: 0;
   color: #000;
-  font-family: Inter;
+  font-family: kfont;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -125,10 +136,9 @@ const ContentResponse = styled.div`
   justify-content: center;
   flex-shrink: 0;
   color: #000;
-  font-family: Inter;
+  font-family: kfont;
   font-size: 12px;
   font-style: normal;
-  font-weight: 400;
   line-height: normal;
   margin-bottom: 10px;
 `;

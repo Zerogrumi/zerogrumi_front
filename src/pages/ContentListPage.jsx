@@ -3,6 +3,7 @@ import styled from "styled-components";
 import ReactDOM from "react-dom";
 import CategoryList from "../components/ContentListPage/ContentList";
 import { contentData } from "../data/writtenPostData";
+import Footer from "../components/Footer";
 
 const ContentListPage = () => {
   return (
@@ -12,6 +13,7 @@ const ContentListPage = () => {
           <CategoryList category="tipShare" />
         </StyleContainer>
       </PageContainer>
+      <Footer />
     </>
   );
 };
