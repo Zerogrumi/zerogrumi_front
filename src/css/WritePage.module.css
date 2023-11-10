@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "font";
+  src: url("../font/Hey\ October.ttf") format("truetype");
+  font-family: "Kfont";
+  src: url("../font/SB\ Aggro\ M.ttf") format("truetype");
+  font-family: "Kfont";
+  src: url("../font/SB\ Aggro\ M.ttf") format("truetype");
+}
+* {
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  display: flex;
+  justify-content: center;
+}
+body {
+  width: 375px;
+  height: 812px;
+}
+button {
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  background-color: #96c6ba;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 812px;
+}
+.nav {
+  display: flex;
+  background-color: #ef9f38;
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  justify-content: center;
+}
+.zeroImg {
+  display: flex;
+  width: 200px;
+  height: 117px;
+  background: url(../img/earthImg.png) no-repeat;
+  margin-top: 30px;
+}
+
+.title1 {
+  font-family: "font";
+  font-size: 20px;
+  margin-top: 10px;
+  margin-right: 5px;
+  font-weight: 800;
+}
+
+.title2 {
+  font-family: "Kfont";
+  font-family: "Kfont";
+  font-size: 20px;
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+.putImgbox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 320px;
+  border-radius: 50px;
+  background-color: white;
+  overflow: hidden;
+}
+.putImgbox img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.imguploadBtn {
+  margin-top: 15px;
+  font-family: "Kfont";
+  font-size: 12px;
+  font-family: "Kfont";
+  font-size: 12px;
+  text-align: center;
+  height: 30px;
+  width: 125px;
+  border-radius: 10px;
+  background-color: #d9d9d9;
+}
+
+.textbox {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  font-size: 17px;
+  font-family: "Kfont";
+}
+
+.userTitle {
+  margin-top: 20px;
+  font-family: "Kfont";
+}
+.userContent {
+  margin-top: 20px;
+  font-family: "Kfont";
+}
+.inputTitle {
+  margin-left: 10px;
+  height: 40px;
+  width: 270px;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 10px;
+  font-family: "Tfont";
+}
+.inputContent {
+  margin-left: 10px;
+  height: 200px;
+  width: 270px;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 15px;
+  font-family: "Tfont";
+}
+.uploadBtn {
+  margin-top: 60px;
+  height: 40px;
+  width: 150px;
+  background-color: #158d6c;
+  border-radius: 10px;
+  text-align: center;
+  font-family: "Kfont";
+  font-size: 15px;
+  color: white;
+  font-weight: 1000;
+}
+.tipBtn {
+  height: 40px;
+  width: 130px;
+  background-color: black;
+  border-radius: 100px;
+  text-align: center;
+  font-family: "Kfont";
+  font-size: 15px;
+  color: white;
+  font-weight: 1000;
+}
+.storeBtn {
+  height: 40px;
+  width: 130px;
+  background-color: black;
+  border-radius: 100px;
+  text-align: center;
+  font-family: "Kfont";
+  font-size: 15px;
+  color: white;
+  font-weight: 1000;
+  margin-left: 30px;
+}
+
+.btnBox {
+  margin-top: 30px;
+  display: flex;
+}

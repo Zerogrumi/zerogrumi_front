@@ -9,6 +9,7 @@ import HomePage from "./pages/HomePage";
 import ContentListPage from "./pages/ContentListPage";
 import VerifyPage from "./pages/VerifyPage";
 import CommunityPage from "./pages/CommunityPage";
+import WritePage from "./pages/WritePage";
 
 export default function Router() {
   return (
@@ -24,6 +25,7 @@ export default function Router() {
           <Route path="/list" element={<ContentListPage />} />
           <Route path="/veri" element={<VerifyPage />} />
           <Route path="/comu" element={<CommunityPage />} />
+          <Route path="/writ" element={<WritePage />} />
         </Routes>
       </BrowserRouter>
     </>

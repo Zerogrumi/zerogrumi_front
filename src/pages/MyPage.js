@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../css/MyPage.module.css";
 import pointImg from "../img/point.svg";
+import Card from "../components/Card";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
@@ -22,6 +23,7 @@ const MyPage = (props) => {
           <img src={pointImg} />
           <div className={styles.pointNum}>1234</div>
         </div>
+        <Card showRecommendBar={false} />
       </div>
       <Footer />
     </>
