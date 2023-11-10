@@ -21,7 +21,7 @@ export const contentData = [
     zeroGrade: 5,
     userImg: "../img/user.svg",
     content:
-      "설거지할때 쓰는 수세미 있잖아 그거 사실은 진짜 천연 수세미로도 설거지할때 쓸 수 있대 한그루만 길러도 충분히 설거지할떄 쓰고 남을 정도라고 하니까 한번 키워보는거 어떄?",
+      "설거지할때 쓰는 수세미 있잖아 그거 사실은 진짜 천연 수세미로도 설거지할때 쓸 수 있대 한그루만 길러도 충분히 설거지할 때 쓰고 남을 정도라고 하니까 한번 키워보는거 어떄?",
     category: "tipShare",
     heart: 10,
     commentCount: 9,

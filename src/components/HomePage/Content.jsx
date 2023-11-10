@@ -25,6 +25,10 @@ const FontStyles = styled.div`
     font-family: "Kfont";
     src: url("../font/SB\ Aggro\ M.ttf") format("truetype");
   }
+  @font-face {
+    font-family: "Tfont";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff");
+  }
 `;
 
 const Container = styled.div`
@@ -63,10 +67,10 @@ const ContentText = styled.div`
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
-  font-family: Inter;
-  font-size: 15px;
-  font-style: normal;
+  font-family: "Tfont";
   font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
   line-height: normal;
 `;
 
