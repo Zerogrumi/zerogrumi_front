@@ -6,7 +6,10 @@ import Content from "./Content";
 import { contentData } from "../../data/writtenPostData";
 
 const CategoryList = ({ category }) => {
-  const filteredData = contentData
+  const storedDataString = sessionStorage.getItem("writeData");
+  const storedData = storedDataString ? JSON.parse(storedDataString) : [];
+
+  const filteredData = storedData
     .filter((data) => data.category === category)
     .reverse();
 
@@ -15,7 +18,7 @@ const CategoryList = ({ category }) => {
       <Container>
         <ContentContainer>
           {filteredData.map((data) => (
-            <Link to={`/comu`}>
+            <Link to={`/comu/${data.id}`}>
               <Content
                 key={data.id}
                 title={data.title}

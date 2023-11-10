@@ -21,6 +21,10 @@ export default function HomePage() {
             <CategoryName>가게 공유 커뮤니티</CategoryName>
           </Link>
           <CategoryList category="spaceShare" />
+          <Link to={`/list`} state={{ category: "veri" }}>
+            <CategoryName>실천 공유 커뮤니티</CategoryName>
+          </Link>
+          <CategoryList category="veri" />
         </StyleContainer>
       </PageContainer>
       <Footer />
@@ -42,7 +46,6 @@ const FontStyles = styled.div`
 const PageContainer = styled.div`
   padding-top: 38px;
   width: 375px;
-  height: 812px;
   background: #96c6ba;
   margin: auto;
 `;

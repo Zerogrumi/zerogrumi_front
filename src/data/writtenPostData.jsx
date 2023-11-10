@@ -50,7 +50,7 @@ export const contentData = [
     UserImg: "../img/user.svg",
     content:
       "여기 가면 내가 원하는 만큼 샴푸도 시리얼도 그램수만큼 살 수 있어 얘들아 근데 담을 용기는 꼭 챙겨가야하는거 알지?",
-    category: "spaceShare",
+    category: "veri",
     heart: 20,
     commentCount: 2,
     scrap: 124,
