@@ -66,11 +66,11 @@ const Write = () => {
             Tip
           </button>
           <button
-            className={`${styles.tipBtn} ${
-              selectedButton === "tipShare" ? styles.selected : ""
+            className={`${styles.storeBtn} ${
+              selectedButton === "spaceShare" ? styles.selected : ""
             }`}
             style={{
-              backgroundColor: selectedButton === "tipShare" ? "green" : "",
+              backgroundColor: selectedButton === "spaceShare" ? "green" : "",
             }}
             onClick={() => {
               handleCategorySelection("spaceShare");
