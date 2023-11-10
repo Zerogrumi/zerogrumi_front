@@ -34,7 +34,9 @@ const Card = ({ showRecommendBar = true, commentCount }) => {
         {showRecommendBar && (
           <div className={styles.recommendBar}>
             <div className={styles.recommend}>
-              공감 {likeCount} 저장 {saveCount} 댓글 {commentCount}
+              공감 <span style={{ color: "green" }}>{likeCount}</span> 저장{" "}
+              <span style={{ color: "green" }}>{saveCount}</span> 댓글{" "}
+              {commentCount}
             </div>
             <button className={styles.recommendBtn} onClick={handleLikeClick}>
               공감
