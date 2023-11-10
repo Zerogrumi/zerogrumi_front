@@ -116,7 +116,7 @@ button {
   border-radius: 10px;
   font-size: 15px;
   padding: 10px;
-  font-family: "Kfont";
+  font-family: "Tfont";
 }
 .inputContent {
   margin-left: 10px;
@@ -125,7 +125,7 @@ button {
   border-radius: 10px;
   padding: 10px;
   font-size: 15px;
-  font-family: "Kfont";
+  font-family: "Tfont";
 }
 .uploadBtn {
   margin-top: 20px;
