@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from "../css/CommunityPage.module.css";
 
-const Card = () => {
+const Card = ({ showRecommendBar = true }) => {
   const [likeCount, setLikeCount] = useState(0);
   const [saveCount, setSaveCount] = useState(0);
 
@@ -31,17 +31,19 @@ const Card = () => {
             길거리 음식 사먹을때 일회용품에 담아주니까 낭비가 되는거 같아서
           </div>
         </div>
-        <div className={styles.recommendBar}>
-          <div className={styles.recommend}>
-            공감 {likeCount} 저장 {saveCount} 댓글 2
+        {showRecommendBar && (
+          <div className={styles.recommendBar}>
+            <div className={styles.recommend}>
+              공감 {likeCount} 저장 {saveCount} 댓글 2
+            </div>
+            <button className={styles.recommendBtn} onClick={handleLikeClick}>
+              공감
+            </button>
+            <button className={styles.saveBtn} onClick={handleSaveClick}>
+              저장
+            </button>
           </div>
-          <button className={styles.recommendBtn} onClick={handleLikeClick}>
-            공감
-          </button>
-          <button className={styles.saveBtn} onClick={handleSaveClick}>
-            저장
-          </button>
-        </div>
+        )}
       </div>
     </>
   );

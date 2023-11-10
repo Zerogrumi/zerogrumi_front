@@ -23,7 +23,7 @@ const MyPage = (props) => {
           <img src={pointImg} />
           <div className={styles.pointNum}>1234</div>
         </div>
-        <Card />
+        <Card showRecommendBar={false} />
       </div>
       <Footer />
     </>
