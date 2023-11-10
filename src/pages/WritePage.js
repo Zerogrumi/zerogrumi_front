@@ -56,7 +56,7 @@ const Write = () => {
               selectedButton === "tipShare" ? styles.selected : ""
             }`}
             style={{
-              backgroundColor: selectedButton === "tipShare" ? "green" : "",
+              backgroundColor: selectedButton === "tipShare" ? "#158d6c" : "",
             }}
             onClick={() => {
               handleCategorySelection("tipShare");
@@ -66,11 +66,11 @@ const Write = () => {
             Tip
           </button>
           <button
-            className={`${styles.tipBtn} ${
-              selectedButton === "tipShare" ? styles.selected : ""
+            className={`${styles.storeBtn} ${
+              selectedButton === "spaceShare" ? styles.selected : ""
             }`}
             style={{
-              backgroundColor: selectedButton === "tipShare" ? "green" : "",
+              backgroundColor: selectedButton === "spaceShare" ? "#158d6c" : "",
             }}
             onClick={() => {
               handleCategorySelection("spaceShare");
