@@ -3,7 +3,6 @@ import styles from "../css/CommunityPage.module.css";
 import Card from "../components/Card";
 import Comment from "../components/Comment";
 import Footer from "../components/Footer";
-import { Link } from "react-router-dom";
 
 const Community = () => {
   const [inputComment, setInputComment] = useState("");
