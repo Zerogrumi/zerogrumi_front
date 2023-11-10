@@ -45,6 +45,7 @@ const Community = () => {
           <input className={styles.inputComment}></input>
           <button className={styles.commentBtn}>보내기</button>
         </div>
+
         <Footer />
       </div>
     </>
