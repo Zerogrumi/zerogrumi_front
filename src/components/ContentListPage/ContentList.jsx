@@ -27,6 +27,7 @@ const CategoryList = () => {
                 <Content
                   title={data.title}
                   name={data.name}
+                  content={data.content}
                   userImg={data.userImg}
                   zeroGrade={data.zeroGrade}
                   heart={data.heart}
@@ -68,8 +69,9 @@ const FontStyles = styled.div`
 
 const BoardName = styled.div`
   position: absolute;
-  top: 22px;
+  top: 20px;
   width: 375px;
+  height: 40px;
   text-align: center;
   background-color: #ef9f38;
   margin: auto;
@@ -81,21 +83,22 @@ const BoardName = styled.div`
   font-size: 22px;
   font-style: normal;
   line-height: normal;
+  padding: 10px;
 `;
 
 const Container = styled.div`
   margin: 16px;
   width: 333px;
-  background: #96c6ba;
+  background: #158d6c;
   margin: auto;
 `;
 
 const ContentContainer = styled.div`
-  margin-top: 30px;
+  margin-top: 35px;
 `;
 
 const ContentStyle = styled.div`
-  margin-top: 15px;
+  margin-top: 10px;
 `;
 
 export default CategoryList;

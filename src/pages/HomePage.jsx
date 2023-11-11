@@ -14,15 +14,15 @@ export default function HomePage() {
         <StyleContainer>
           <Hot></Hot>
           <Link to={`/list`} state={{ category: "tipShare" }}>
-            <CategoryName>꿀팁 공유 커뮤니티</CategoryName>
+            <CategoryName>| 꿀팁 공유 커뮤니티</CategoryName>
           </Link>
           <CategoryList category="tipShare" />
           <Link to={`/list`} state={{ category: "spaceShare" }}>
-            <CategoryName>가게 공유 커뮤니티</CategoryName>
+            <CategoryName>| 가게 공유 커뮤니티</CategoryName>
           </Link>
           <CategoryList category="spaceShare" />
           <Link to={`/list`} state={{ category: "expShare" }}>
-            <CategoryName>실천 공유 커뮤니티</CategoryName>
+            <CategoryName>| 실천 공유 커뮤니티</CategoryName>
             <CategoryList category="expShare" />
           </Link>
         </StyleContainer>
@@ -44,21 +44,19 @@ const FontStyles = styled.div`
 `;
 
 const PageContainer = styled.div`
-  padding-top: 38px;
+  padding-top: 58px;
   width: 375px;
-  background: #96c6ba;
-  margin: auto;
+  background: #158d6c;
 `;
 
 const StyleContainer = styled.div`
   width: 375px;
-  margin: auto;
 `;
 
 const TopLine = styled.div`
   position: absolute;
   top: 22px;
-  height: 10px;
+  height: 20px;
   width: 375px;
   background-color: #ef9f38;
   margin: auto;
@@ -71,7 +69,7 @@ const CategoryName = styled.div`
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
-  color: #000000;
+  color: #ffffff;
   font-family: kfont;
   font-size: 20px;
   font-style: normal;

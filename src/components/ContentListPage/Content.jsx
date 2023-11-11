@@ -7,11 +7,16 @@ const Content = ({
   title,
   name,
   userImg,
+  content,
   zeroGrade,
   heart,
   commentCount,
   scrap,
 }) => {
+  const truncatedTitle = title.length > 10 ? `${title.slice(0, 10)}...` : title;
+  const truncatedContent =
+    content.length > 35 ? `${content.slice(0, 35)}...` : content;
+
   const renderStars = () => {
     const maxStars = 5;
     const filledStars = Math.min(zeroGrade, maxStars);
@@ -28,20 +33,15 @@ const Content = ({
   return (
     <Container>
       <ContentBox>
+        <Title>{truncatedTitle}</Title>
         <UserInfoDIv>
-          <UserImg src={uImg} />
+          <ContentText>{truncatedContent}</ContentText>
         </UserInfoDIv>
-        <UserInfoDIv>
-          <UserInfoStyleDiv>
-            <UserName>{name}</UserName>
-            <UserGrade>{renderStars()}</UserGrade>
-          </UserInfoStyleDiv>
-        </UserInfoDIv>
-        <Title>{title}</Title>
         <ContentResponse>
           공감 {heart + " "}
           댓글 {commentCount + " "}
-          저장 {scrap + " "}
+          저장 {scrap + " | "}
+          작성자 {name + " "}
         </ContentResponse>
       </ContentBox>
     </Container>
@@ -57,20 +57,24 @@ const FontStyles = styled.div`
     font-family: "Kfont";
     src: url("../font/SB\ Aggro\ M.ttf") format("truetype");
   }
+  @font-face {
+    font-family: "Tfont";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff");
+  }
 `;
 
 const Container = styled.div`
   width: 330px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: #158d6c;
+  background: #ffffff;
   padding: 5px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  margin: 0px 10px 0px 0px;
 `;
 
 const ContentBox = styled.div`
-  background: #158d6c;
+  background: #ffffff;
+  margin: 10px;
 `;
 
 const Title = styled.div`
@@ -81,10 +85,24 @@ const Title = styled.div`
   font-size: 20px;
   font-style: normal;
   line-height: normal;
-  background: #158d6c;
+  background: #ffffff;
+  margin-bottom: 5px;
+  margin-right: 10px;
+`;
+
+const ContentText = styled.div`
+  background: #ffffff;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  font-family: "Tfont";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 15px;
+  line-height: normal;
+  margin-right: 10px;
   margin-bottom: 10px;
-  margin-left: 12px;
-  margin-right: 12px;
+  height: 40px;
 `;
 
 const UserInfoDIv = styled.div`
@@ -127,7 +145,6 @@ const UserGrade = styled.div`
 `;
 
 const ContentResponse = styled.div`
-  margin-left: 12px;
   margin-right: 12px;
   display: flex;
   width: 304px;

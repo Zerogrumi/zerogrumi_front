@@ -1,16 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 
-const Content = ({ title, content }) => {
-  const truncatedTitle = title.length > 20 ? `${title.slice(0, 19)}...` : title;
+const Content = ({ title, content, name, zeroGrade }) => {
+  const truncatedTitle = title.length > 17 ? `${title.slice(0, 17)}...` : title;
   const truncatedContent =
-    content.length > 72 ? `${content.slice(0, 71)}...` : content;
+    content.length > 60 ? `${content.slice(0, 60)}...` : content;
 
   return (
     <Container>
       <ContentBox>
         <Title>{truncatedTitle}</Title>
-        <ContentText>{truncatedContent}</ContentText>
+        <UserInfo>{name + " | " + zeroGrade}</UserInfo>
+        {/* <ContentText>{truncatedContent}</ContentText> */}
       </ContentBox>
     </Container>
   );
@@ -32,24 +33,23 @@ const FontStyles = styled.div`
 `;
 
 const Container = styled.div`
-  width: 169px;
-  height: 185px;
+  width: 322px;
+  height: 56px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: #158d6c;
+  background: #ffffff;
   padding: 5px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin: 0px 10px 0px 0px;
-  overflow-x: hidden;
+  margin-top: 6px;
 `;
 
 const ContentBox = styled.div`
-  background: #158d6c;
+  background: #ffffff;
 `;
 
 const Title = styled.div`
-  width: 160px;
-  height: 36px;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
   color: #000000;
@@ -57,12 +57,24 @@ const Title = styled.div`
   font-size: 18px;
   font-style: normal;
   line-height: normal;
-  background: #158d6c;
+  background: #ffffff;
   margin-bottom: 10px;
 `;
 
+const UserInfo = styled.div`
+  width: 160px;
+  flex-direction: column;
+  justify-content: center;
+  color: #000000;
+  font-family: "Kfont";
+  font-size: 11px;
+  font-style: normal;
+  line-height: normal;
+  background: #ffffff;
+`;
+
 const ContentText = styled.div`
-  background: #158d6c;
+  background: #ffffff;
   width: 160px;
   flex-direction: column;
   justify-content: center;
