@@ -11,12 +11,12 @@ const footer = () => {
   return (
     <div className={styles.content}>
       <div className={styles.commu_tip}>
-        <Link to="/home">
+        <Link to={`/list`} state={{ category: "expShare" }}>
           <img src={commu_tip} />
         </Link>
       </div>
       <div className={styles.commu_add}>
-        <Link to="/home">
+        <Link to={`/list`} state={{ category: "tipShare" }}>
           <img src={commu_add} />
         </Link>
       </div>
@@ -26,7 +26,7 @@ const footer = () => {
         </Link>
       </div>
       <div className={styles.store}>
-        <Link to="/home">
+        <Link to={`/list`} state={{ category: "spaceShare" }}>
           <img src={store} />
         </Link>
       </div>
