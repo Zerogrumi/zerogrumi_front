@@ -34,6 +34,9 @@ const SignUP = () => {
           <p>Check Password</p>
           <input type="text" name="signUp_checkPW" placeholder="" />
         </div>
+        <div className={styles.signUp_btn}>
+          <p>sign up</p>
+        </div>
         <Footer />
       </div>
     </>
