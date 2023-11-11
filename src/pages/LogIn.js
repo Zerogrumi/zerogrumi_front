@@ -27,18 +27,18 @@ const LogIn = () => {
           <p>Password</p>
           <input type="text" name="signIn_PW" placeholder="" />
         </div>
-        <div className={styles.signIn_btn}>
-          <Link to="/login">
+        <Link to="/home">
+          <div className={styles.signIn_btn}>
             <p>sign in</p>
-          </Link>
-        </div>
+          </div>
+        </Link>
         <div className={styles.line}></div>
         <div className={styles.conment}>계정이 없으신가요? </div>
-        <div className={styles.signUp_btn}>
-          <Link to="/login">
+        <Link to="/signup">
+          <div className={styles.signUp_btn}>
             <p>sign up</p>
-          </Link>
-        </div>
+          </div>
+        </Link>
         <Footer />
       </div>
     </>
