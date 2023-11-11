@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "../css/WritePage.module.css";
 import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Write = () => {
   const [title, setTitle] = useState("");
@@ -17,8 +18,8 @@ const Write = () => {
       id: storedData.length > 0 ? storedData[storedData.length - 1].id + 1 : 1,
       title,
       date: new Date().toISOString().split("T")[0],
-      name: "로그인된 이름",
-      zeroGrade: "로그인된 등급",
+      name: "해탈한 로션",
+      zeroGrade: "1",
       UserImg: "../img/user.svg",
       content,
       category,
@@ -33,6 +34,27 @@ const Write = () => {
 
     console.log("저장:", storedData);
     navigate("/home");
+  };
+
+  const onSubmit = () => {
+    try {
+      // HTTP POST 요청으로 새로운 게시물 생성
+      axios
+        .post("http://54.180.13.47:8080/api/board?userId=yerim", {
+          category: 1,
+          title: title,
+          content: content,
+        })
+        .then(() => window.location.reload());
+
+      // 입력값 초기화
+      setTitle("");
+      setContent("");
+      setCategory("");
+      setSelectedButton(null);
+    } catch (error) {
+      console.error("새로운 글 작성 중 오류 발생:", error);
+    }
   };
 
   const handleCategorySelection = (selectedCategory) => {

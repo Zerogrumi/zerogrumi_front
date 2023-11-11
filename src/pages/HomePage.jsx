@@ -5,6 +5,7 @@ import Hot from "../components/HomePage/Hot";
 import CategoryList from "../components/HomePage/CategoryList";
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
+import axios from "axios";
 
 export default function HomePage() {
   return (
