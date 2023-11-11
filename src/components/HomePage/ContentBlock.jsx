@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const ContentBlock = ({ content }) => {
   const { title, heart } = content;
 
-  const truncatedTitle = title.length > 2 ? `${title.slice(0, 19)}...` : title;
+  const truncatedTitle = title.length > 20 ? `${title.slice(0, 19)}...` : title;
 
   if (heart >= 10) {
     return (
@@ -25,18 +25,11 @@ export default ContentBlock;
 const Title = styled.div`
   width: 322px;
   height: 36px;
-  background-color: #158d6c;
+  background-color: #ffffff;
   border-radius: 5px;
-  padding: 3px;
-  margin: 1px;
+  padding: 6px;
+  margin-bottom: 7px;
   font-family: "kfont";
-
-  &:hover {
-    color: #ffffff;
-    border: 3px solid #ef9f38;
-    // transition: 0.3s;
-  }
-
   overflow: hidden;
 `;
 

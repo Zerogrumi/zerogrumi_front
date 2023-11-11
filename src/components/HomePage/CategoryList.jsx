@@ -23,6 +23,8 @@ const CategoryList = ({ category }) => {
                 key={data.id}
                 title={data.title}
                 content={data.content}
+                name={data.name}
+                zeroGrade={data.zeroGrade}
               />
             </Link>
           ))}
@@ -35,15 +37,13 @@ const CategoryList = ({ category }) => {
 const Container = styled.div`
   margin: 16px;
   width: 333px;
-  height: 220px;
-  background: #96c6ba;
-  overflow: hidden;
+  height: 123px;
+  background: #158d6c;
+  overflow: scroll;
+
   margin: auto;
 `;
 
-const ContentContainer = styled.div`
-  display: flex;
-  overflow-x: scroll;
-`;
+const ContentContainer = styled.div``;
 
 export default CategoryList;

@@ -18,21 +18,21 @@ const First = (props) => {
           <div className={styles.subhead}>Start with me, Start with you</div>
         </Link>
 
-        <div className={styles.First_btn}>
-          <Link to="/login">
+        <Link to="/login">
+          <div className={styles.First_btn}>
             <p>SIGN IN</p>
-          </Link>
-        </div>
-        <div className={styles.First_btn}>
-          <Link to="/signup">
+          </div>
+        </Link>
+        <Link to="/signup">
+          <div className={styles.First_btn}>
             <p>SIGN UP</p>
-          </Link>
-        </div>
-        <div className={styles.First_btn}>
-          <Link to="/home">
+          </div>
+        </Link>
+        <Link to="/home">
+          <div className={styles.First_btn}>
             <p>HOME</p>
-          </Link>
-        </div>
+          </div>
+        </Link>
         <div className={styles.footer}>
           <Footer />
         </div>
