@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../css/SignUP.module.css";
+import Title from "../components/title";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 
@@ -8,12 +9,7 @@ const SignUP = () => {
     <>
       <div className={styles.content}>
         <div className={styles.nav}></div>
-        <Link to="/">
-          <div className={styles.title}>ZERO WASTE</div>
-        </Link>
-        <Link to="/">
-          <div className={styles.subhead}>Start with me, Start with you</div>
-        </Link>
+        <Title />
         <div className={styles.signinText}>
           <p>sign up</p>
         </div>

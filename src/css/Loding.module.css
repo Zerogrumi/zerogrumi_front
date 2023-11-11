@@ -1,0 +1,15 @@
+.loding {
+  background: url(../img/loding.png) no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 375px;
+  height: 812px;
+  border: 2px solid;
+  color: pink;
+}
+
+.loding img {
+  width: 50%;
+}
