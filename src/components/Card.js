@@ -2,7 +2,17 @@ import React, { useEffect, useState } from "react";
 import styles from "../css/CommunityPage.module.css";
 import { useParams, useLocation } from "react-router-dom";
 
-const Card = ({ showRecommendBar = true, commentCount }) => {
+const Card = ({
+  showRecommendBar = true,
+  title,
+  name,
+  userImg,
+  content,
+  zeroGrade,
+  heart,
+  commentCount,
+  scrap,
+}) => {
   const [likeCount, setLikeCount] = useState(0);
   const [saveCount, setSaveCount] = useState(0);
   const [postData, setPostData] = useState({});
@@ -54,14 +64,14 @@ const Card = ({ showRecommendBar = true, commentCount }) => {
           ></img>
           <div className={styles.userName}>
             <div style={{ width: "100%", fontSize: "18px", fontWeight: "2px" }}>
-              {postData.name}
+              {name}
             </div>
-            제로등급: {postData.zeroGrade}
+            제로등급: {zeroGrade}
           </div>
         </div>
         <div className={styles.userContentbox}>
-          <div className={styles.subtitle}>{postData.title}</div>
-          <div className={styles.subcontent}>{postData.content}</div>
+          <div className={styles.subtitle}>{title}</div>
+          <div className={styles.subcontent}>{content}</div>
         </div>
         {showRecommendBar && (
           <div className={styles.recommendBar}>
