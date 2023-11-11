@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../css/CommunityPage.module.css";
 import Card from "../components/Card";
+import Title from "../components/title";
 import Comment from "../components/Comment";
 import Footer from "../components/Footer";
 
@@ -23,6 +24,7 @@ const Community = () => {
         <div className={styles.nav}>
           <div className={styles.title}>길거리 음식도 제로웨이스트하자</div>
         </div>
+        <Title />
         <Card commentCount={comments.length} />
         {comments.map((comment, index) => (
           <Comment key={index} commentText={comment} />
