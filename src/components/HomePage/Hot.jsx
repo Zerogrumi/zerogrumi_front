@@ -4,12 +4,14 @@ import ContentBlock from "./ContentBlock.jsx";
 import { contentData } from "../../data/writtenPostData.jsx";
 
 const Hot = () => {
-  const [contentList, setContentList] = useState(contentData);
+  const storedData = JSON.parse(sessionStorage.getItem("writeData")) || [];
+
+  const [contentList, setContentList] = useState(storedData);
 
   return (
     <>
       <Container>
-        <Title>Hot 게시판</Title>
+        <Title>Hot 게시글</Title>
         <ContentArea>
           {contentList.map((content) => (
             <ContentBlock key={content.id} content={content} />
@@ -27,10 +29,7 @@ const Container = styled.div`
   background-color: #158d6c;
   padding: 5px;
   border-radius: 10px;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   margin: auto;
-
-  //가로스크롤이없애고싶다진짜로
   -ms-overflow-style: none;
   &::-webkit-scrollbar {
     display: none;
@@ -44,8 +43,7 @@ const Title = styled.div`
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
-  color: #000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
   font-family: kfont;
   font-size: 20px;
   font-style: normal;
@@ -55,16 +53,17 @@ const Title = styled.div`
   height: 35px;
   margin: auto;
   text-align: center;
-  border: 1px solid black;
   border-radius: 10px;
-  background-color: #ffffff;
+  background-color: #158d6c;
   margin-bottom: 10px;
 `;
 
 const ContentArea = styled.div`
   width: 322px;
+  height: 123px;
   margin: auto;
   background-color: #158d6c;
+  overflow: hidden;
 `;
 
 const FontStyles = styled.div`

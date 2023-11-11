@@ -65,7 +65,7 @@ export const contentData = [
     content:
       "그래도 한번 사면 오래 쓸 수 있는 물건들이야 꽤 괜찮으니 한번 가보시긴",
     category: "spaceShare",
-    heart: 23,
+    heart: 3,
     commentCount: 2,
     scrap: 124,
   },
@@ -78,7 +78,7 @@ export const contentData = [
     userImg: "../",
     content: "없애버리고 싶은데 안 없어져서 날 속상하게 해",
     category: "spaceShare",
-    heart: 200,
+    heart: 2,
     commentCount: 2,
     scrap: 124,
   },

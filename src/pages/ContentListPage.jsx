@@ -14,8 +14,8 @@ const ContentListPage = () => {
         <StyleContainer>
           <CategoryList category="tipShare" />
         </StyleContainer>
+        <Footer />
       </PageContainer>
-      <Footer />
     </>
   );
 };
@@ -24,7 +24,7 @@ const PageContainer = styled.div`
   padding-top: 38px;
   width: 375px;
   height: 812px;
-  background: #96c6ba;
+  background: #158d6c;
   margin: auto;
 `;
 
